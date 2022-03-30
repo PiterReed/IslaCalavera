@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="logica.js"></script>
+        <link href="estilos/estilos.css" rel="stylesheet" type="text/css">
+        <title>Isla Calavera</title>
+        <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
+    </head>
+    <body  onload="inicio()">
+        <header class="topnav">
+            <div>
+            <a class="active" href="index.html">Juego</a>
+            <a href="reglas.html">Reglas</a>
+            <a href="https://www.youtube.com/watch?v=rW1vTsg2lBA&t=299s" target="_blank">Video</a>
+            </div>
+            <div>
+            <audio controls autoplay>
+                <source src="media/music.m4a" type="audio/ogg">
+                <source src="media/music.m4a" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+            </div>
+        </header>
+        <div class="game">
+            <div class="puntuacion">
+                <div class="nuevojuego">
+                    <input type="button" id="btnnuevo" value="Nueva Partida" onclick="juegonuevo()">
+                </div>
+                <div class="puntaje">Objetivo: <span id="puntaje"></span></div>
+                <div class="fondopuntuacion">
+                <div class="puntuacionjugador">
+                    <div class="activo">
+                        <p class="jugador" id="player1"></p><img id="jugador1activo" src="imagenes/doblon.png" />
+                     </div>
+                     <div class=activo>
+                        <p id="jugador1" value="0"></p>
+                    </div>
+                </div>
+                </div>
+                <p></p>
+                <div class="fondopuntuacion">
+                <div class="puntuacionjugador">
+                    <div class="activo">
+                        <p class="jugador" id="player2"></p><img id="jugador2activo" src="imagenes/doblon.png" />
+                    </div>
+                    <div class=activo>
+                        <p id="jugador2" value="0"></p>
+                    </div>
+                </div>
+                </div>
+                <div class="leyenda">
+                    <div>
+                    <img src="imagenes/baraja/leyenda.png">
+                </div>
+                </div>
+                
+            </div>
+            <div class="tablero">
+                
+                <div class="tableros">
+                    <div class="tablerodado">
+                        <div class="tablerodadoarriba">
+                            <div class="dado" id="uno">
+                                <div class="resultado">
+                                    <img name="dadouno"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block1" value="Bloquear" onclick="lockdiceuno()">
+                                </div>
+                            </div>
+                            <div class="dado" id="dos">
+                                <div class="resultado">
+                                    <img name="dadodos"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block2" value="Bloquear" onclick="lockdicedos()">
+                                </div>
+                            </div>
+                            <div class="dado" id="tres">
+                                <div class="resultado">
+                                    <img name="dadotres"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block3" value="Bloquear" onclick="lockdicetres()">
+                                </div>
+
+                            </div>
+                            <div class="dado" id="cuatro">
+                                <div class="resultado">
+                                    <img name="dadocuatro"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block4" value="Bloquear" onclick="lockdicecuatro()">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tablerodadoabajo">
+                            <div class="dado" id="cinco">
+                                <div class="resultado">
+                                    <img name="dadocinco"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block5" value="Bloquear" onclick="lockdicecinco()">
+                                </div>
+
+                            </div>
+                            <div class="dado" id="seis">
+                                <div class="resultado">
+                                    <img name="dadoseis"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block6" value="Bloquear" onclick="lockdiceseis()">
+                                </div>
+
+                            </div>
+                            <div class="dado" id="siete">
+                                <div class="resultado">
+                                    <img name="dadosiete"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block7" value="Bloquear" onclick="lockdicesiete()">
+                                </div>
+
+                            </div>
+                            <div class="dado" id="ocho">
+                                <div class="resultado">
+                                    <img name="dadoocho"/>
+                                </div>
+                                <div class="boton">
+                                    <input type="button" id="block8" value="Bloquear" onclick="lockdiceocho()">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablerocartas">
+                        <div>
+                            <img name="carta"src="imagenes/baraja/reverso.png"/>
+                        </div>
+                        <div>
+                            <img name="reverso" src="imagenes/baraja/reverso.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    
+                        <input type="button" id="btntirada" value="Tirar" onclick="tirada()">
+                        <input type="button" id="btnacabar" value="Acabar turno" onclick="turnend()">
+                    
+                </div>
+
+            </div>
+        </div>
+        
+    </body>
+
+
+</html>

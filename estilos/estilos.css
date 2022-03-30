@@ -1,0 +1,218 @@
+@font-face{
+    font-family:"PiratesBay";
+    src: url("PiratesBay.ttf")
+}
+header {
+    width: 100%;
+}
+body{
+    background-image: url("../imagenes/fondo2.jpg");
+    background-position: center;
+    background-size: cover;
+    margin:0px;
+    font-family: "PiratesBay";
+}
+.game{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    
+}
+.puntuacion{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-flow:column nowrap;
+    width: 20%;
+    height:90%;
+     
+}
+.leyenda{
+    display:flex;
+    margin-top: 30px;
+    margin-left:20px;
+}
+.fondopuntuacion{
+    background-image: url(../imagenes/placa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+}
+.tablero{
+    width: 80%;
+    height: 100%;
+    margin-top: 10%;
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.nuevojuego{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#btnnuevo{
+    font-family: "PiratesBay";
+    font-size: x-large;
+    background-color:rgb(194,178,128);
+
+}
+#btntirada{
+    width:200px;
+    height:60px;
+    justify-content: center;
+    font-family: "PiratesBay";
+    font-size: x-large;
+    margin-left: 30px;
+    background-color:rgb(194,178,128);
+}
+#btnacabar{
+    width:200px;
+    height:60px;
+    justify-content: center;
+    font-family: "PiratesBay";
+    font-size: x-large;
+    margin-left: 30px;
+    background-color:rgb(194,178,128);
+}
+.dado{
+    width: 120px;
+    height: 120px;
+    display:flex;
+    flex-flow: column wrap;
+    
+}
+.resultado{
+    display: flex;
+    height: 70%;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    display: flex;
+    height: 30%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "PiratesBay";
+}
+
+.botones{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+.jugador{
+    height: 20px;
+    width: 60%;
+    margin:0px;
+    background-color: rgb(194,178,128);;
+    border: solid black 2px;
+    font-family: "PiratesBay";
+}
+#jugador1,#jugador2{
+    height: 20px;
+    width: 60%;
+    margin:0px;
+    background-color:rgb(194,178,128);;
+    border: solid black 2px;
+    font-family: "PiratesBay";
+}
+.tableros{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.tablerodado{
+    width:70%;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+.tablerodadoarriba{
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.tablerodadoabajo{
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.tablerocartas{
+    width:30%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+
+
+}
+.puntuacionjugador{
+    display:flex;
+    flex-flow: row wrap;
+    width:100%;
+
+    
+}
+.activo{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+.activo img{
+    width: 30px;
+    height:30px;
+    margin-right: 35px;
+
+}
+
+#jugador1activo,#jugador2activo{
+    visibility: hidden;
+
+}
+/*TopNav*/
+
+.topnav {
+    background-color: rgb(49, 49, 49);
+    overflow: hidden;
+    margin:0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin:5px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(194,178,128);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(194,178,128);
+    border-radius: 25px;
+    color: rgb(3, 3, 3);
+  }
+
+.puntaje{
+    background-color: rgb(194,178,128);
+    text-align: center;
+    border: solid 2px black;
+    margin-bottom: 5px;
+}
